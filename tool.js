@@ -5,7 +5,7 @@
 // @description  Get Discord token + enroll or claim quests easily — UI panel by Euiz Dev
 // @author       7xr
 // @match         https://discord.com/*
-// @run-at       document-idle
+// @run-at       document-start
 // @grant        none
 // ==/UserScript==
 
