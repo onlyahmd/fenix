@@ -1,16 +1,52 @@
 // ==UserScript==
-// @name         Euiz Tools Loaderr
+// @name         Fenix Tool Loader
 // @namespace    http://tampermonkey.net/
-// @version      2.0.6
-// @description  Loads Euiz Tools via @require
-// @author       7xr
-// @match        *://discord.com/*
-// @run-at       document-idle
-// @grant        none
-// @require      https://cdn.jsdelivr.net/gh/onlyahmd/Fenix-Discord-Tool@main/i.js?v=1
+// @version      1.0
+// @match        https://discord.com/*
+// @grant        GM_xmlhttpRequest
+// @connect      raw.githubusercontent.com
+// @run-at       document-start
 // ==/UserScript==
 
-(function() {
-    'use strict';
-    console.log('Euiz Tools loaded via @require!');
+(function () {
+"use strict";
+
+const SCRIPT_URL =
+"https://raw.githubusercontent.com/onlyahmd/Fenix-Discord-Tool/main/script.js";
+
+function inject(code){
+
+const s = document.createElement("script");
+s.textContent = code;
+document.documentElement.appendChild(s);
+s.remove();
+
+}
+
+function loadRemote(){
+
+GM_xmlhttpRequest({
+method: "GET",
+url: SCRIPT_URL + "?cache=" + Date.now(),
+onload: function(res){
+
+if(res.status === 200){
+
+console.log("Fenix Tool updated & loaded");
+
+inject(res.responseText);
+
+}else{
+
+console.error("Loader failed:",res.status);
+
+}
+
+}
+});
+
+}
+
+loadRemote();
+
 })();
