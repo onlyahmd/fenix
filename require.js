@@ -1,23 +1,16 @@
 // ==UserScript==
-// @name Euiz Tools Loader
-// @namespace http://tampermonkey.net/
-// @version 3.0
-// @match https://discord.com/*
-// @run-at document-start
-// @grant none
+// @name         Euiz Tools Loader
+// @namespace    http://tampermonkey.net/
+// @version      2.0.6
+// @description  Loads Euiz Tools via @require
+// @author       7xr
+// @match        *://discord.com/*
+// @run-at       document-idle
+// @grant        none
+// @require      https://cdn.jsdelivr.net/gh/onlyahmd/Fenix-Discord-Tool@main@main/script.js?v=1
 // ==/UserScript==
 
-(function () {
-'use strict';
-
-const url = "https://cdn.jsdelivr.net/gh/onlyahmd/Fenix-Discord-Tool@main/quest.js?v=1";
-
-const s = document.createElement("script");
-s.src = url + "?t=" + Date.now();
-s.type = "text/javascript";
-
-document.documentElement.appendChild(s);
-
-console.log("Euiz Tools injected");
-
-})();
+(function() {
+    'use strict';
+    console.log('Euiz Tools loaded via @require!');
+})()

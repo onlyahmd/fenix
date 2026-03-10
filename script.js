@@ -2,6 +2,8 @@
 
 "use strict"
 
+function startTool(){
+
 //══════[ Font Setup ]══════
 
 const styleLink = document.createElement('link')
@@ -607,6 +609,14 @@ panel.style.display = "flex";
 header.onclick = () => {
 panel.style.display = "none";
 toggleBtn.style.display = "block"; 
+}
+
+}
+
+if (document.readyState !== "complete") {
+window.addEventListener("load", startTool)
+} else {
+startTool()
 }
 
 })();
