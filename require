@@ -7,10 +7,10 @@
 // @match        *://discord.com/*
 // @run-at       document-idle
 // @grant        none
-// @require      https://cdn.jsdelivr.net/gh/onlyahmd/Fenix-Discord-Tool@main@main/inject.js?v=1
+// @require      https://cdn.jsdelivr.net/gh/7xrrr/discord_tools@main/script.js?v=1
 // ==/UserScript==
 
 (function() {
     'use strict';
     console.log('Euiz Tools loaded via @require!');
-})()
+})();

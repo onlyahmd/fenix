@@ -1,11 +1,20 @@
+// ==UserScript==
+// @name         Euiz tools
+// @namespace    http://tampermonkey.net/
+// @version      2.0.0
+// @description  Get Discord token + enroll or claim quests easily — UI panel by Euiz Dev
+// @author       7xr
+// @match         https://discord.com/*
+// @run-at       document-end
+// @grant        none
+// ==/UserScript==
+
 (function() {
 
 "use strict"
 
-function startTool(){
-
 //══════[ Font Setup ]══════
-
+/*
 const styleLink = document.createElement('link')
 styleLink.href = "https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@500&display=swap"
 styleLink.rel = "stylesheet"
@@ -14,7 +23,7 @@ document.head.appendChild(styleLink)
 const globalStyle = document.createElement('style')
 globalStyle.textContent = `*{margin:0;padding:0;font-family:"IBM Plex Sans",sans-serif;box-sizing:border-box;text-decoration:none;font-weight:bold;}`
 document.head.appendChild(globalStyle)
-
+*/
 //══════[ Toast Container ]══════
 
 const toastContainer = document.createElement("div")
@@ -609,14 +618,6 @@ panel.style.display = "flex";
 header.onclick = () => {
 panel.style.display = "none";
 toggleBtn.style.display = "block"; 
-}
-
-}
-
-if (document.readyState !== "complete") {
-window.addEventListener("load", startTool)
-} else {
-startTool()
 }
 
 })();
