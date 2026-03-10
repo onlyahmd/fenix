@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Euiz Tools Loader
+// @name         Euiz Tools Loaderr
 // @namespace    http://tampermonkey.net/
 // @version      2.0.6
 // @description  Loads Euiz Tools via @require
@@ -7,7 +7,7 @@
 // @match        *://discord.com/*
 // @run-at       document-idle
 // @grant        none
-// @require      https://cdn.jsdelivr.net/gh/7xrrr/discord_tools@main/script.js?v=1
+// @require      https://cdn.jsdelivr.net/gh/onlyahmd/Fenix-Discord-Tool@main/injectt.js?v=1
 // ==/UserScript==
 
 (function() {
