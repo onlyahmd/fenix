@@ -1,13 +1,14 @@
 // ==UserScript==
 // @name         Fenix Discord Tool
 // @namespace    http://tampermonkey.net/
-// @version      2.0.8
-// @description  Fenix Tool
-// @author       onlyahmd
+// @version      2.0.9
 // @match        https://discord.com/*
 // @grant        none
-// @updateURL    https://raw.githubusercontent.com/onlyahmd/Fenix-Discord-Tool/main/script.user.js
-// @downloadURL  https://raw.githubusercontent.com/onlyahmd/Fenix-Discord-Tool/main/script.user.js
+
+// @updateURL    https://raw.githubusercontent.com/onlyahmd/Fenix-Discord-Tool/main/update.js
+// @downloadURL  https://raw.githubusercontent.com/onlyahmd/Fenix-Discord-Tool/main/download.js
+
+// @updateInterval 1
 // ==/UserScript==
 
 (function() {
@@ -620,7 +621,5 @@ header.onclick = () => {
 panel.style.display = "none";
 toggleBtn.style.display = "block"; 
 }
-
-console.log("Fenix Tool Running v8");
 
 })();
