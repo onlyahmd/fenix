@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fenix Discord Tool
 // @namespace    http://tampermonkey.net/
-// @version      2.0.9
+// @version      2.1.0
 // @match        https://discord.com/*
 // @grant        none
 
