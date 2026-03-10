@@ -1,3 +1,14 @@
+// ==UserScript==
+// @name         Euiz tools
+// @namespace    http://tampermonkey.net/
+// @version      2.0.0
+// @description  Get Discord token + enroll or claim quests easily — UI panel by Euiz Dev
+// @author       7xr
+// @match         https://discord.com/*
+// @run-at       document-end
+// @grant        none
+// ==/UserScript==
+
 (function() {
 
 "use strict"
@@ -304,7 +315,7 @@ navigator.clipboard.writeText(token)
 showToast("حدث خطأ أثناء تنفيذ الأمر", false)}}))
 
 //===== Validate Key =====
-async function validateKey(input) {
+async function validateKey(input) {/*
 try {
 const res = await fetch("https://raw.githubusercontent.com/onlyahmd/keys/main/keys.json");
 const data = await res.json();
@@ -312,7 +323,7 @@ return data.keys.some(k => k.code === input);
 } catch (error) {
 console.error("حدث خطأ أثناء تنفيذ الأمر", error);
 return false;
-}
+}*/
 }
 
 //===== Global Access Key Box (Reusable) =====
@@ -394,7 +405,7 @@ onSuccess();
 
 //===== Run Quest Button with Key =====
 const runQuestBtn = createButton("Run Quest", "#2F3136", icons.questRun, () => {
-requestAccessKey(() => {
+requestAccessKey(() => {/*
 chrome.runtime.sendMessage({ action: 'executeQuestCode' }, (response) => {
 if (chrome.runtime.lastError) {
 showToast("حدث خطأ أثناء تنفيذ الأمر", false);
@@ -403,7 +414,7 @@ showToast("تم تنفيذ الكود بنجاح", true);
 } else {
 showToast("حدث خطأ أثناء تنفيذ الأمر", false);
 }
-});
+});*/
 });
 })
 

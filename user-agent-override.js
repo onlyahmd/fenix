@@ -1,15 +1,3 @@
-// ==UserScript==
-// @name         Euiz Tools Loader
-// @namespace    http://tampermonkey.net/
-// @version      9.9.9
-// @description  Loads Fenix Tool via @require
-// @author       @onlyahmd
-// @match        *://discord.com/*
-// @run-at       document-idle
-// @grant        none
-// @require      https://raw.githubusercontent.com/onlyahmd/Fenix-Discord-Tool/main/quest-home.js
-// ==/UserScript==
-
 (function() {
 
 'use strict'
