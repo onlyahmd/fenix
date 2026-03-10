@@ -2,13 +2,11 @@
 // @name         Fenix Discord Tool
 // @namespace    http://tampermonkey.net/
 // @version      2.1.1
-// @match        https://discord.com/*
+// @description  Get Discord token + enroll or claim quests easily — UI panel by Euiz Dev
+// @author       7xr
+// @match         https://discord.com/*
+// @run-at       document-end
 // @grant        none
-
-// @updateURL    https://raw.githubusercontent.com/onlyahmd/Fenix-Discord-Tool/main/update.js
-// @downloadURL  https://raw.githubusercontent.com/onlyahmd/Fenix-Discord-Tool/main/update.js
-
-// @updateInterval 1
 // ==/UserScript==
 
 (function() {
