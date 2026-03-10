@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fenix Discord Tool
 // @namespace    http://tampermonkey.net/
-// @version      2.0.7
+// @version      2.0.8
 // @description  Fenix Tool
 // @author       onlyahmd
 // @match        https://discord.com/*
@@ -621,6 +621,6 @@ panel.style.display = "none";
 toggleBtn.style.display = "block"; 
 }
 
-console.log("Fenix Tool Running");
+console.log("Fenix Tool Running v8");
 
 })();
