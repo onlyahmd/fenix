@@ -394,17 +394,14 @@ onSuccess();
 //===== Run Quest Button with Key =====
 const runQuestBtn = createButton("Run Quest", "#2F3136", icons.questRun, () => {
 requestAccessKey(() => {
-chrome.runtime.sendMessage({ action: "executeQuestCode" }, (response) => {
-if (chrome.runtime.lastError) {
-showToast("حدث خطأ أثناء تنفيذ الأمر", false);
-} else if (response && response.success) {
+try {
+runQuestScript();
 showToast("تم تنفيذ الكود بنجاح", true);
-} else {
+} catch {
 showToast("حدث خطأ أثناء تنفيذ الأمر", false);
 }
 });
 });
-})
 
 btnContainer.appendChild(runQuestBtn);
 
