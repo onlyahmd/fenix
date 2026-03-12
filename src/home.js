@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name            Fenix Procord
-// @description     @onlyahmd — All rights reserved 2019 ©
+// @description     Developed By @onlyahmd — All rights reserved 2019 ©
 // @version         1.0.0
 // @author          @onlyahmd
 // @match           https://discord.com/channels/*
@@ -125,9 +125,7 @@ panel.appendChild(bottomBtnWrapper)
 
 const footer = document.createElement("div")
 footer.style = "font-size:10px;color:#b9bbbe;margin-top:6px;font-weight:bold;text-align:center;"
-footer.innerHTML = `
-Developed By <a href="https://onlyahmd.github.io/io" target="_blank" style="color:#FFF;text-decoration:none;font-weight:bold;">@onlyahmd</a> — All rights reserved 2019 ©
-`;
+footer.innerHTML = `Developed By <a href="https://onlyahmd.github.io/io" target="_blank" style="color:#FFF;text-decoration:none;font-weight:bold;">@onlyahmd</a> — All rights reserved 2019 ©`;
 panel.appendChild(footer)
 
 //===== SVG Icons =====
