@@ -18,8 +18,4 @@
 
 console.log('Fenix Procord loaded via @require')
 
-fetch("https://cdn.jsdelivr.net/gh/onlyahmd/fenix@main/procord/home.js")
-.then(r => r.text())
-.then(code => console.log(code))
-
 })();

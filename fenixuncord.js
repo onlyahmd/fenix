@@ -1,12 +1,3 @@
-// ==UserScript==
-// @name            Fenix Uncord
-// @description     Developed By @onlyahmd — All rights reserved 2019 ©
-// @version         1.0.0
-// @author          @onlyahmd
-// @match           https://discord.com/channels/*
-// @grant           none
-// ==/UserScript==
-
 (function () {
 'use strict';
 
