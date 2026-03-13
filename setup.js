@@ -5,8 +5,7 @@
 // @author       @onlyahmd
 // @match        https://discord.com/*
 // @run-at       document-idle
-// @grant        GM_xmlhttpRequest
-// @connect      *
+// @grant        none
 // @icon         https://cdn.jsdelivr.net/gh/onlyahmd/fenixuncord@main/icon.png
 // @require      https://cdn.jsdelivr.net/gh/onlyahmd/fenixuncord@main/code.js
 // ==/UserScript==
