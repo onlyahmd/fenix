@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Fenix Procord
 // @description  Developed By @onlyahmd — All rights reserved 2019 ©
-// @version      1.0.0
+// @version      1.0.1
 // @author       @onlyahmd
 // @match        https://discord.com/*
 // @grant        GM_xmlhttpRequest
