@@ -8,7 +8,7 @@
 // @connect      raw.githubusercontent.com
 // @run-at       document-idle
 // @icon         https://cdn.jsdelivr.net/gh/onlyahmd/fenixuncord@main/icon.png
-// @require      https://cdn.jsdelivr.net/gh/onlyahmd/fenixuncord@main/testcode.js
+// @require      https://cdn.jsdelivr.net/gh/onlyahmd/fenixuncord@main/testcode2.js
 // ==/UserScript==
 
 (function() {
